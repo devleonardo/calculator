@@ -2,20 +2,26 @@ const numeral = document.querySelectorAll('dt');
 const signals = document.querySelectorAll('dd');
 let exit = document.getElementById('exit');
 let entry = [];
-// let exit = document.querySelector('#exit');
-let val = 0;
+let val1 = 0;
+let val2 = 0;
 
 callback = (event) =>{
-    val = event.target.innerText;
+    val1 = event.target.innerText;
+    val2 = event.target.innerText;
     // console.log(val);
 }
 
-numeral.forEach((index)=>{
+numeral.forEach((index) => {
     index.addEventListener('click', callback);
 });
 
+signals.forEach((index) => {
+    index.addEventListener('click', callback);
+})
+
 onclick = () => {
-    firstClick = exit.value = val;
+    click1 = exit.value = val1;
+    click2 = exit.value = val2;
     // exit.value +val;
     // firstClick+val;
 }

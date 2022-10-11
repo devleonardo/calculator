@@ -1,40 +1,32 @@
 const numeral = document.querySelectorAll('dt');
 const signals = document.querySelectorAll('dd');
 let exit = document.getElementById('exit');
-let entry = [];
-let val1 = 0;
-let val2 = 0;
+let values, operator = [], operation = [];
 
-callback = (event) =>{
-    val1 = event.target.innerText;
-    val2 = event.target.innerText;
-    // console.log(val);
+
+callback = (e) =>{
+    values = e.target.innerText;
+    exit.value += values;
 }
 
-numeral.forEach((index) => {
-    index.addEventListener('click', callback);
+numeral.forEach((i) => {
+    i.addEventListener('click', callback);
 });
 
-signals.forEach((index) => {
-    index.addEventListener('click', callback);
+signals.forEach((i) => {
+    operator.push(i);
+});
+
+operator[5].addEventListener('click', () => {
+    operation.unshift(parseFloat(exit.value));
+    exit.value = '+';
+    // exit.value = `${operation[0]}+`
+    // exit = write(`${operation[0]}+`)
 })
 
-onclick = () => {
-    click1 = exit.value = val1;
-    click2 = exit.value = val2;
-    // exit.value +val;
-    // firstClick+val;
-}
-
-// calculo = () => {
-//     // entry.push(val);
-    
-// }
-
-
-
-// signals.forEach((index)=>{
-//     index.addEventListener('click', calculo)
-// });
-
-// document.querySelector('#exit').value = callback();
+operator[4].addEventListener('click', () => {
+    operation.unshift(parseFloat(exit.value));
+    soma = operation[0] + operation[1];
+    operation.unshift(soma);
+    exit.value = operation[0];
+})

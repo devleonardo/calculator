@@ -29,10 +29,12 @@
     width: 310px;
     height: 100px;
     background: transparent;
+    border: none;
     text-align: right;
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: 'Share Tech Mono', monospace;
-    font-size: 3em;
+    font-size: 3.2em;
+    font-weight: bold;
     padding: 0 20px 0 20px;
     outline-style: none;
 }

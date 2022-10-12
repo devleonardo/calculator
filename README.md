@@ -1,4 +1,4 @@
-
+<!-- 
 # Testes de velocidade em sequência
 
 São requisitados pela empresa, uma sequencia de 8 testes de velocidade em 3
@@ -34,4 +34,4 @@ Clique aqui para testar → [Testes de velocidade](https://devleonardo.github.io
 
 ## Licença
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/) -->

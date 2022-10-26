@@ -23,7 +23,7 @@ signals.forEach((i) => {
 
 // EVENTO DE CLICK AO OPERADOR +, -, ÷, x
 // PEGA O VALOR TECLADO E ADICIONA NO INICIO DE UM ARRAY
-// EXITE O VALOR NO VISOR COM O OPERADOR SELECIONADO
+// EXIBE O VALOR NO VISOR COM O OPERADOR SELECIONADO
 [operator[0], operator[1], operator[2], operator[5]].forEach(e=> {
     e.addEventListener('click', (event) => {
         console.log(event.target.innerText);    

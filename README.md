@@ -10,14 +10,14 @@ Foi criado uma lista de definição: **"dl, dd e dt"**.
 
 ## Eventos
 
-Utilizando um evento "target", identificando o click em uma NodeList
+Utilizando "target" que detecta o elemento exato que disparou o evento
 e adicionando os valores clicados a saída.
 
 ![Lista de definição](https://raw.githubusercontent.com/devleonardo/images/master/imgs/code2.png)
 ## Operadores
 
-Percorrendo a NodeList, os operadores foram adicionados a um Array onde serão
-acessados po indice para criar as funções.
+Percorrendo a NodeList e adicionando os operadores um Array onde serão
+acessados por indice para criar suas funções.
 
 ![Lista de definição](https://github.com/devleonardo/images/blob/master/imgs/code3.png?raw=true)
 ## Demonstração

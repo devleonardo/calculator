@@ -21,6 +21,8 @@ signals.forEach((i) => {
     operator.push(i);
 });
 
+
+
 // EVENTO DE CLICK AO OPERADOR +, -, ÷, x
 // PEGA O VALOR TECLADO E ADICIONA NO INICIO DE UM ARRAY
 // EXIBE O VALOR NO VISOR COM O OPERADOR SELECIONADO
